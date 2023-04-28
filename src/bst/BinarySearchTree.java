@@ -122,7 +122,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	
 	private void preOrderRecurse(BSTNode<T> node) {
 		
-		System.out.print(node.data);
+		System.out.print(node.data + " ");
 		if(node.leftChild != null)
 			preOrderRecurse(node.leftChild);
 		if (node.rightChild != null)
@@ -150,7 +150,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 	public void inOrderRecurse(BSTNode<T> node) {
 		if(node.leftChild != null)
 			inOrderRecurse(node.leftChild);
-		System.out.print(node.data);
+		System.out.print(node.data + " ");
 		if (node.rightChild != null)
 			inOrderRecurse(node.rightChild);
 	}
@@ -174,7 +174,7 @@ public class BinarySearchTree<T extends Comparable<T>> {
 			postOrderRecurse(node.leftChild);
 		if (node.rightChild != null)
 			postOrderRecurse(node.rightChild);
-		System.out.print(node.data);
+		System.out.print(node.data + " ");
 	}
 	
 	//Traverse the tree in an postorder fashion uses Stacks. 
